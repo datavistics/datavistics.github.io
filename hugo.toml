@@ -1,45 +1,125 @@
 baseURL = 'https://datavistics.github.io/'
 languageCode = 'en-us'
 title = "Derek Thomas's AI Blog"
-theme = 'ananke'
+theme = ['hugo-notice', 'PaperMod']
 resourceDir = "resources"
+enableEmoji = true
 
-DefaultContentLanguage = "en"
 SectionPagesMenu = "main"
 Paginate = 10 # this is set low for demonstrating with dummy content. Set to a higher number
 googleAnalytics = "G-9ZGDRP3XHT"
 enableRobotsTXT = true
 
-#[languages]
-#[languages.en]
-#title = "Ananke"
-#weight = 1
-#contentDir = "content/en"
-## languageDirection = 'rtl' for Right-To-Left languages
-#[languages.fr]
-#title = "Ananke Fr"
-#weight = 2
-#contentDir = "content/fr"
+buildDrafts = false
+buildFuture = false
+buildExpired = false
+pygmentsUseClasses = true
 
-[sitemap]
-changefreq = "monthly"
-priority = 0.5
-filename = "sitemap.xml"
+[minify]
+disableXML = true
+minifyOutput = true
 
 [params]
-text_color = ""
-author = ""
-favicon = ""
-site_logo = ""
-description = "The last theme you'll ever need. Maybe."
-# choose a background color from any on this page: https://tachyons.io/docs/themes/skins/ and preface it with "bg-"
-background_color_class = "bg-black"
-recent_posts_number = 3
+env = "production"
+title = "ExampleSite"
+description = "ExampleSite description"
+keywords = ["Blog", "Portfolio", "PaperMod"]
+author = "Me"
+images = ["<link or path of image for opengraph, twitter-cards>"]
+DateFormat = "January 2, 2006"
+defaultTheme = "auto"
+disableThemeToggle = false
+ShowReadingTime = true
+ShowShareButtons = true
+ShowPostNavLinks = true
+ShowBreadCrumbs = true
+ShowCodeCopyButtons = false
+ShowWordCount = true
+ShowRssButtonInSectionTermList = true
+UseHugoToc = true
+disableSpecial1stPost = false
+disableScrollToTop = false
+comments = true
+hidemeta = false
+hideSummary = false
+showtoc = false
+tocopen = false
 
-[[params.ananke_socials]]
+[params.assets]
+favicon = "<link / abs url>"
+favicon16x16 = "<link / abs url>"
+favicon32x32 = "<link / abs url>"
+apple_touch_icon = "<link / abs url>"
+safari_pinned_tab = "<link / abs url>"
+
+[params.label]
+text = "Home"
+icon = "/apple-touch-icon.png"
+iconHeight = 35
+
+[params.profileMode]
+enabled = false
+title = "ExampleSite"
+subtitle = "This is subtitle"
+imageUrl = "<img location>"
+imageWidth = 120
+imageHeight = 120
+imageTitle = "my image"
+
+[[params.profileMode.buttons]]
+name = "Posts"
+url = "posts"
+
+[[params.profileMode.buttons]]
+name = "Tags"
+url = "tags"
+
+[params.homeInfoParams]
+Title = "Hi there 👋🏾,  I'm Derek"
+Content = """
+[Pre-Sales Machine Learning Success Engineer at 🤗](https://huggingface.co)
+
+Welcome to my personal **AI Blog**
+"""
+
+[[params.socialIcons]]
 name = "linkedin"
 url = "https://www.linkedin.com/in/dthomas/"
 
-[[params.ananke_socials]]
+[[params.socialIcons]]
 name = "huggingface"
 url = "https://huggingface.co/derek-thomas"
+
+[params.analytics.google]
+SiteVerificationTag = "G-9ZGDRP3XHT"
+
+[params.cover]
+hidden = true
+hiddenInList = true
+hiddenInSingle = true
+
+[params.editPost]
+URL = "https://github.com/datavistics/datavistics.github.io/content"
+Text = "Suggest Changes"
+appendFilePath = true
+
+[params.fuseOpts]
+isCaseSensitive = false
+shouldSort = true
+location = 0
+distance = 1_000
+threshold = 0.4
+minMatchCharLength = 0
+keys = ["title", "permalink", "summary", "content"]
+
+[[menu.main]]
+identifier = "Tags"
+name = "Tags"
+url = "/tags/"
+weight = 20
+
+[markup.highlight]
+noClasses = false
+
+[outputs]
+home = [ 'HTML', 'RSS', 'JSON' ]

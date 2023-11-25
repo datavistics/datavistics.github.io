@@ -1,3 +1,6 @@
-[submodule "themes/ananke"]
-	path = themes/ananke
-	url = https://github.com/datavistics/gohugo-theme-ananke.git
+[submodule "themes/PaperMod"]
+	path = themes/PaperMod
+	url = https://github.com/datavistics/hugo-PaperMod.git
+[submodule "themes/hugo-notice"]
+	path = themes/hugo-notice
+	url = https://github.com/martignoni/hugo-notice.git
