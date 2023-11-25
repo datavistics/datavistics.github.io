@@ -30,8 +30,8 @@ env = "production"
 title = "Derek's AI Blog"
 description = "Derek's AI Blog"
 keywords = ["AI", "Blog", "LLMs", "Learn LLMs", "Arabic NLP", "NLP"]
-author = "Me"
-images = ["<link or path of image for opengraph, twitter-cards>"]
+author = "Derek Thomas"
+images = ["https://aeiljuispo.cloudimg.io/v7/https://cdn-uploads.huggingface.co/production/uploads/1670323064870-638eb5f949de7ae552dd6211.jpeg?w=200&h=200&f=face"]
 DateFormat = "January 2, 2006"
 defaultTheme = "auto"
 disableThemeToggle = false
@@ -111,6 +111,12 @@ distance = 1_000
 threshold = 0.4
 minMatchCharLength = 0
 keys = ["title", "permalink", "summary", "content"]
+
+[[menu.main]]
+identifier = "Search"
+name = "🔍 Search"
+url = "/search/"
+weight = 20
 
 [[menu.main]]
 identifier = "Tags"
