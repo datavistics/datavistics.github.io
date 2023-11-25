@@ -4,7 +4,8 @@ date = 2023-11-25T16:40:58+04:00
 author = "Derek Thomas"
 ShowBreadCrumbs = true
 tags = ['general']
-cover.image = "https://www.timeoutabudhabi.com/cloud/timeoutabudhabi/2021/09/10/oHPROnqC-things-to-do-in-abu-dhabi-2-1200x800.jpg"
+cover.image = "abu-dhabi.png"
+cover.alt = "Photo Credit to Timeout Abu Dhabi"
 +++
 
 # Introduction
