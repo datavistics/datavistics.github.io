@@ -113,6 +113,12 @@ minMatchCharLength = 0
 keys = ["title", "permalink", "summary", "content"]
 
 [[menu.main]]
+identifier = "Archive"
+name = "📁 Archive"
+url = "/archives/"
+weight = 20
+
+[[menu.main]]
 identifier = "Search"
 name = "🔍 Search"
 url = "/search/"
@@ -120,7 +126,7 @@ weight = 20
 
 [[menu.main]]
 identifier = "Tags"
-name = "Tags"
+name = "🏷️ Tags"
 url = "/tags/"
 weight = 20
 
