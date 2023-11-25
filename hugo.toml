@@ -79,7 +79,9 @@ Title = "Hi there 👋🏾,  I'm Derek"
 Content = """
 [Pre-Sales Machine Learning Success Engineer at 🤗](https://huggingface.co)
 
-Welcome to my personal **AI Blog**
+Welcome to my personal **AI Blog**!
+
+Please note that all views are entirely my own.
 """
 
 [[params.socialIcons]]
