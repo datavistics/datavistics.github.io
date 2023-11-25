@@ -7,7 +7,7 @@ resourceDir = "resources"
 DefaultContentLanguage = "en"
 SectionPagesMenu = "main"
 Paginate = 10 # this is set low for demonstrating with dummy content. Set to a higher number
-googleAnalytics = "UA-91837460-1"
+googleAnalytics = "G-9ZGDRP3XHT"
 enableRobotsTXT = true
 
 #[languages]
