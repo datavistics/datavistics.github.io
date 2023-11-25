@@ -2,9 +2,8 @@
 title = 'Init Commit'
 date = 2023-11-25T16:40:58+04:00
 author = "Derek Thomas"
-#ShowReadingTime = true
 ShowBreadCrumbs = true
-#ShowPostNavLinks = true
+tags = ['general']
 +++
 
 # Introduction
