@@ -2,7 +2,9 @@
 title = 'Init Commit'
 date = 2023-11-25T16:40:58+04:00
 author = "Derek Thomas"
-ShowReadingTime = true
+#ShowReadingTime = true
+ShowBreadCrumbs = true
+#ShowPostNavLinks = true
 +++
 
 # Introduction
@@ -16,11 +18,11 @@ I'd say it worked out, since we got married and have 2 kids.
 
 # Focus
 Now that you know a little about me, let me tell you about my intentions here. I want to post about interesting topics
-around AI. I especially want to post more on Arabic NLP. Arabic is spoken by ~1 Billion people but tends to not have
+around AI. I've also noticed a gap around Arabic NLP. Arabic is spoken by ~1 Billion people but tends to not have
 as much activity as other non-english languages. I don't speak Arabic, but I'll see if there are creative ways to make
 valuable posts.
 
-I hope you find these posts valuable and don't hesitate to add me on [LinkedIn](https://www.linkedin.com/in/dthomas/) or
+I hope you find these posts valuable! Please don't hesitate to add me on [LinkedIn](https://www.linkedin.com/in/dthomas/) or
 follow me on [Hugging Face](https://huggingface.co/derek-thomas)
 
 {{< notice note >}}Note I might update this post over time {{< /notice >}}
