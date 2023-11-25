@@ -62,15 +62,6 @@ text = "Home"
 icon = "/apple-touch-icon.png"
 iconHeight = 35
 
-
-[[params.profileMode.buttons]]
-name = "Posts"
-url = "posts"
-
-[[params.profileMode.buttons]]
-name = "Tags"
-url = "tags"
-
 [params.homeInfoParams]
 Title = "Hi there 👋🏾,  I'm Derek"
 Content = """
