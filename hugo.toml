@@ -1,3 +1,9 @@
+# Notes
+# SVG Builder: https://jakearchibald.github.io/svgomg/
+# Example: https://matthijsjanssens.github.io | https://github.com/matthijsjanssens/matthijsjanssens.github.io
+# Example 2: https://lilianweng.github.io | https://github.com/lilianweng/lilianweng.github.io
+
+
 baseURL = 'https://datavistics.github.io/'
 languageCode = 'en-us'
 title = "Derek Thomas's AI Blog"
@@ -21,9 +27,9 @@ minifyOutput = true
 
 [params]
 env = "production"
-title = "ExampleSite"
-description = "ExampleSite description"
-keywords = ["Blog", "Portfolio", "PaperMod"]
+title = "Derek's AI Blog"
+description = "Derek's AI Blog"
+keywords = ["AI", "Blog", "LLMs", "Learn LLMs", "Arabic NLP", "NLP"]
 author = "Me"
 images = ["<link or path of image for opengraph, twitter-cards>"]
 DateFormat = "January 2, 2006"
@@ -33,7 +39,7 @@ ShowReadingTime = true
 ShowShareButtons = true
 ShowPostNavLinks = true
 ShowBreadCrumbs = true
-ShowCodeCopyButtons = false
+ShowCodeCopyButtons = true
 ShowWordCount = true
 ShowRssButtonInSectionTermList = true
 UseHugoToc = true
@@ -42,29 +48,20 @@ disableScrollToTop = false
 comments = true
 hidemeta = false
 hideSummary = false
-showtoc = false
+showtoc = true
 tocopen = false
 
-[params.assets]
-favicon = "<link / abs url>"
-favicon16x16 = "<link / abs url>"
-favicon32x32 = "<link / abs url>"
-apple_touch_icon = "<link / abs url>"
-safari_pinned_tab = "<link / abs url>"
+[markup.highlight]
+codeFences = true
+guessSyntax = true
+lineNos = false
+noClasses = false
 
 [params.label]
 text = "Home"
 icon = "/apple-touch-icon.png"
 iconHeight = 35
 
-[params.profileMode]
-enabled = false
-title = "ExampleSite"
-subtitle = "This is subtitle"
-imageUrl = "<img location>"
-imageWidth = 120
-imageHeight = 120
-imageTitle = "my image"
 
 [[params.profileMode.buttons]]
 name = "Posts"
@@ -83,6 +80,7 @@ Welcome to my personal **AI Blog**!
 
 Please note that all views are entirely my own.
 """
+picture = "https://aeiljuispo.cloudimg.io/v7/https://cdn-uploads.huggingface.co/production/uploads/1670323064870-638eb5f949de7ae552dd6211.jpeg?w=200&h=200&f=face"
 
 [[params.socialIcons]]
 name = "linkedin"
@@ -96,7 +94,7 @@ url = "https://huggingface.co/derek-thomas"
 SiteVerificationTag = "G-9ZGDRP3XHT"
 
 [params.cover]
-hidden = true
+hidden = false
 hiddenInList = true
 hiddenInSingle = true
 
@@ -119,9 +117,6 @@ identifier = "Tags"
 name = "Tags"
 url = "/tags/"
 weight = 20
-
-[markup.highlight]
-noClasses = false
 
 [outputs]
 home = [ 'HTML', 'RSS', 'JSON' ]
