@@ -99,7 +99,7 @@ hiddenInList = true
 hiddenInSingle = true
 
 [params.editPost]
-URL = "https://github.com/datavistics/datavistics.github.io/content"
+URL = "https://github.com/datavistics/datavistics.github.io/tree/main/content"
 Text = "Suggest Changes"
 appendFilePath = true
 
