@@ -1,0 +1,4 @@
+baseURL = 'https://datavistics.github.io/'
+languageCode = 'en-us'
+title = "Derek Thomas's AI Blog"
+theme = 'ananke'
