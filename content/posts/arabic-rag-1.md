@@ -1,5 +1,5 @@
 +++
-title = 'Arabic Rag 1: Getting the Data'
+title = 'Arabic RAG 1: Getting the Data'
 date = 2023-11-26T07:32:41+04:00
 author = "Derek Thomas"
 draft = false
