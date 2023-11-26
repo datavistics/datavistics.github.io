@@ -2,7 +2,7 @@
 title = 'Arabic Rag 1: Getting the Data'
 date = 2023-11-26T07:32:41+04:00
 author = "Derek Thomas"
-draft = true
+draft = false
 ShowReadingTime = true
 tags = ["Arabic NLP", "Arabic RAG", "Tutorial"]
 cover.image = "cover_images/arabic-rag-1.png"
