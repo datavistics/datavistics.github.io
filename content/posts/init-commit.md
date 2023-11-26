@@ -4,7 +4,7 @@ date = 2023-11-25T16:40:58+04:00
 author = "Derek Thomas"
 ShowBreadCrumbs = true
 tags = ['general']
-cover.image = "abu-dhabi.png"
+cover.image = "cover_images/init-commit.png"
 cover.alt = "Photo Credit to Timeout Abu Dhabi"
 +++
 
