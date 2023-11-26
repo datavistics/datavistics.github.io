@@ -145,7 +145,7 @@ I like `.ndjson` because it:
 Dive into the [consolidate functionality](https://huggingface.co/spaces/derek-thomas/arabic-RAG/blob/main/src/preprocessing/consolidate.py) for more details.
 
 {{< notice note >}}
-This is the second sticking point, as its not easy to place extra code. Here is
+This is the second sticking point, as it's not easy to place extra code. Here is
 [consolidate.py](https://huggingface.co/spaces/derek-thomas/arabic-RAG/blob/main/src/preprocessing/consolidate.py) in
 case you aren't using the repository.
 {{< /notice >}}
