@@ -90,8 +90,6 @@ apple_touch_icon = "assets/apple_touch_icon.png"
 favicon16x16 = "assets/favicon-16x16.png"
 favicon32x32 =  "assets/favicon-32x32.png"
 
-
-
 [params.cover]
 hidden = false
 hiddenInList = true
