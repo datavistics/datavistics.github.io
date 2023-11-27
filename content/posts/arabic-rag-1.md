@@ -19,7 +19,6 @@ In this tutorial you will learn:
 - How to download Wikipedia
 - How to format Wikipedia for scalable processing
 
-
 ## Addressing Hallucinations
 Large Language Models (LLMs) get blamed (though unfairly IMHO) for "hallucinating". Often we anthropomorphize LLMs 
 [1](https://arxiv.org/pdf/2212.03551.pdf) like they are a competant knowledge base when in fact they don't really 
@@ -28,7 +27,7 @@ in a sequence of text.
 
 ## How does RAG work
 RAG is a way of conditioning the prompt with grounded truth. We retrieve relevant documents and 
-ask the LLM to answer questions only based on the information in your documents. This is a mucheasier problem and we 
+ask the LLM to answer questions only based on the information in your documents. This is a much easier problem and we 
 have seen great results and much fewer "hallucinations".
 
 ## Tutorial Notes
@@ -166,3 +165,13 @@ folder_to_json(folder, folder_out, 'ar_wiki')
     
 We did it! We now have the latest Arabic Wikipedia in a digestable format. Lets do some analysis in Part 2 to understand
 how we should chunk our data.
+
+# Tutorial Design Decisions
+I structured this in a repo for a couple reasons:
+- It allows good software practices like abstraction
+- It is easier to create a data system that will work for the future tutorials
+- Its cleaner and easier to maintain
+
+It does pose a challenge when I describe my work. Many times readers would rather just click a button and rush through
+a notebook. Thats fair, I've been there. In this case I wanted to take a deeper more intentional look. Feel free to
+comment with your thoughts!
