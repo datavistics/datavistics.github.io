@@ -65,7 +65,7 @@ iconHeight = 35
 [params.homeInfoParams]
 Title = "Hi there 👋🏾,  I'm Derek"
 Content = """
-[Pre-Sales Machine Learning Success Engineer at 🤗](https://huggingface.co)
+I'm a [Pre-Sales Machine Learning Success Engineer at 🤗](https://huggingface.co)
 
 Welcome to my personal **AI Blog**!
 
@@ -83,6 +83,14 @@ url = "https://huggingface.co/derek-thomas"
 
 [params.analytics.google]
 SiteVerificationTag = "G-9ZGDRP3XHT"
+
+[params.assets]
+favicon = "assets/favicon.ico"
+apple_touch_icon = "assets/apple_touch_icon.png"
+favicon16x16 = "assets/favicon-16x16.png"
+favicon32x32 =  "assets/favicon-32x32.png"
+
+
 
 [params.cover]
 hidden = false
