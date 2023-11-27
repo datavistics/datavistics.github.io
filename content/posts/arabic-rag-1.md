@@ -40,17 +40,19 @@ Arabic Wikipedia is a best case scenario source of information since all (or mos
 I'll be using [jais-13B](https://huggingface.co/core42/jais-13b-chat) from core42 as the LLM. Check out the 
 [paper](https://huggingface.co/papers/2308.16149) here to see the training details.
 
-{{< notice warning >}}
+{{< notice note >}}
 There are a couple sticking points in this tutorial since we need a **directory structure** and
 **supporting files** and these don't easily translate in a tutorial.
 {{< /notice >}}
-
+{{< notice warning >}}
 The easiest way to run this would be to:
 
 1. `git clone https://huggingface.co/spaces/derek-thomas/arabic-RAG`
 1. `cd arabic-RAG`
 1. `jupyter lab`
 1. Use this as a guide.
+{{< /notice >}}
+
 
 # Get Data
 The data from wikipedia starts in XML, our approach will be converting this into a series of `.ndjson` files for easy
@@ -74,7 +76,9 @@ sys.path.append(proj_dir)
 
 ## Install
 
-You can find the file [here](https://huggingface.co/spaces/derek-thomas/arabic-RAG/blob/main/requirements.txt)
+{{< notice note >}}
+This is the first sticking point. You can find the file [here](https://huggingface.co/spaces/derek-thomas/arabic-RAG/blob/main/requirements.txt)
+{{< /notice >}}
 
 ```jupyter
 %pip install -q -r "$proj_dir"/requirements.txt
