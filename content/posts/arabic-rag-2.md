@@ -16,6 +16,7 @@ tutorial, its best that you run
 as described in [part 1]({{< ref "arabic-rag-1" >}}).
 
 In this blog you will learn:
+- How to choose an Embedding Model
 - Why you need to think about token analysis for Arabic RAG
 - How to analyze a tokenizer to estimate words per token 
 - How to visualize this to justify your decisions
@@ -26,13 +27,30 @@ sub-word parts, we might get lots of tokens or closer to the number of words dep
 course also depends on the tokenizer. If you dont know what a tokenizer is, feel free to read about it in the 
 [🤗 NLP Course](https://huggingface.co/learn/nlp-course/chapter2/4?fw=pt). 
 
-## Tokenizer/Embedding Model Choice
-Before we analyze the tokenizer, we first need to choose an embedding model. There are a number of objectives when 
-choosing an embedding model. We will discuss more of these in part 3. For now lets just take the top performing model 
-for `ar-ar` in the `STS` task in the `other` tab from the 
-[MTEB Leaderboard](https://huggingface.co/spaces/mteb/leaderboard) which is 
+## Embedding Model Choice
+Before we analyze the tokenizer, we first need to choose an embedding model as the tokenizer is determined by the 
+embedding model. There are a number of objectives when choosing an embedding model. 
+
+- Context window (how much text we can fit into a single embedding)
+  - For some texts we might prefer the longer context window models like `text-embedding-ada-002` or `jinaai/jina-embeddings-v2-base-en`
+  - Careful as often times fitting a large amount of text into a small vector is non-trivial
+- Model Size
+  - Smaller models run faster, larger ones run slower
+- Embedding Dimensions
+    - Lower dimensions ru faster, higher ones run slower
+- Model Performance
+  - Usually we want the best performing model
+  - Check out the [MTEB Leaderboard](https://huggingface.co/spaces/mteb/leaderboard) to find the best model
+- Multi-linguality
+  - Obviously you may need a multi-lingual model
+
+We obviously will prioritize multi-lingual models. To choose one lets look at the `STS` task tab. That's semantic textual 
+similarty, it tells us how good the model is at comparing similar and dissimilar text. We don't want English only models
+so lets go to the `Other` tab. Lets sort by `STS17 (ar-ar)` as that is our task of choice. Now we can start to compare on
+other objectives we can see that 
 [sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2](https://huggingface.co/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2).
-Though I do hope it gets passed soon since MiniLM is an old model 🤞🏾.
+is the top performing model. Its also quite small and efficient! That was lucky. It's an old model, so I do hope it gets
+passed soon on the leaderboard 🤞🏾
 
 # Tokenizer Analysis
 
