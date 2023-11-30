@@ -1,5 +1,5 @@
 +++
-title = 'Arabic Rag 2: Tokenizer Analysis'
+title = 'Arabic RAG 2: Tokenizer Analysis'
 date = 2023-11-28T18:22:03+04:00
 author = "Derek Thomas"
 draft = false
