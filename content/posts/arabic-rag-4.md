@@ -2,7 +2,7 @@
 title = 'Arabic RAG 4: Get Embeddings'
 date = 2023-12-03T17:13:34+04:00
 author = "Derek Thomas"
-draft = true
+draft = false
 ShowReadingTime = true
 tags = ["Arabic NLP", "Arabic RAG", "Tutorial"]
 cover.image = "cover_images/arabic-rag-4.png"
