@@ -1,5 +1,5 @@
 +++
-title = 'Arabic Rag 4: Get Embeddings'
+title = 'Arabic RAG 4: Get Embeddings'
 date = 2023-12-03T17:13:34+04:00
 author = "Derek Thomas"
 draft = true
