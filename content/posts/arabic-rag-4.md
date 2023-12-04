@@ -23,7 +23,7 @@ how accurate your guess is at the end of the blog. You can find out what other p
 {{< notice info >}}
 In this blog you will learn:
 - What the challenges are with embedding for RAG at scale
-- How to solve this quickly using [TEI](https://github.com/huggingface/text-embeddings-inference) and 
+- How to solve this quickly using [🤗 TEI](https://github.com/huggingface/text-embeddings-inference) and 
 [Inference Endpoints](https://huggingface.co/inference-endpoints)
 - How to embed your chunks in a cost-effective manner
 {{< /notice >}}
@@ -37,7 +37,7 @@ been a lot of developments.
 
 ## Why TEI
 The problem with getting the embeddings efficiently is that there are techniques that exist but they are not widely 
-*applied*. [TEI](https://github.com/huggingface/text-embeddings-inference#docker) solves a number of these:
+*applied*. [🤗 TEI](https://github.com/huggingface/text-embeddings-inference#docker) solves a number of these:
 - Token Based Dynamic Batching
 - Using latest optimizations ([Flash Attention](https://github.com/HazyResearch/flash-attention), 
 [Candle](https://github.com/huggingface/candle) and
@@ -50,7 +50,7 @@ creating this!
 
 # Set up TEI
 There are 2 ways you can go about running [TEI](https://github.com/huggingface/text-embeddings-inference#docker), 
-locally or with [Inference Endpoints](https://huggingface.co/inference-endpoints). Given not everyone will want to use 
+locally or with [🤗 Inference Endpoints](https://huggingface.co/inference-endpoints). Given not everyone will want to use 
 [Inference Endpoints](https://huggingface.co/inference-endpoints) as it is paid I have instructions on how to do this 
 locally to be more inclusive!
 
