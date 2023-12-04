@@ -16,7 +16,7 @@ tutorial, its best that you run
 as described in [part 1]({{< ref "arabic-rag-1" >}}).
 
 Before diving in, I want to you to think about how much money it costs to embed 2M articles. Make an estimate and see
-how accurate your guess is. You can find out what other people thought in 
+how accurate your guess is at the end of the blog. You can find out what other people thought in 
 [this poll](https://www.linkedin.com/feed/update/urn:li:ugcPost:7130532349741514752/) I conducted 
 (*spoiler in the comments*).
 
@@ -31,8 +31,9 @@ In this blog you will learn:
 Getting your embeddings isn't talked about enough. It's always surprisingly difficult as you scale and most tutorials 
 aren't at any real scale. The right answer used to be 
 [exporting to ONNX](https://huggingface.co/docs/optimum/onnxruntime/usage_guides/optimization) with `O4` level 
-optimization and running it from there. While not difficult it took a little know-how and some preparation. But there 
-have been a lot more developments lately.
+optimization and running it from there. While not difficult it took a little know-how and some preparation. This usually
+led to people just running it out of the box and not putting some love and care into the process. Recently there have
+been a lot of developments.
 
 ## Why TEI
 The problem with getting the embeddings efficiently is that there are techniques that exist but they are not widely 
@@ -68,8 +69,9 @@ As described in [part 3]({{< ref "arabic-rag-3" >}}), I chose
 [mteb/leaderboard](https://huggingface.co/spaces/mteb/leaderboard), it's the top performer and half the size of second 
 place! TEI is fast, but this will also make our life easy for storage and retrieval.
 
-I use the `revision=refs/pr/8` because this has the pull request with [safetensors](https://github.com/huggingface/safetensors) which is required by TEI. Check
-out the [pull request](https://huggingface.co/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/discussions/8) if you want to use a different embedding model and it doesnt have safetensors.
+I use the `revision=refs/pr/8` because this has the pull request with [safetensors](https://github.com/huggingface/safetensors) which is optional but faster. 
+Check out the [pull request](https://huggingface.co/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/discussions/8) if you want to use a different embedding model and it doesnt have safetensors you can 
+convert it [here](https://huggingface.co/spaces/safetensors/convert).
 ```bash
 echo "Copy and paste this in another terminal. Make sure you have installed nvidia-docker and build as described here:
 https://github.com/huggingface/text-embeddings-inference#docker-build"
@@ -124,7 +126,9 @@ Check here for a [comprehensive guide](https://huggingface.co/blog/inference-end
     1. Task = `Sentence Embeddings`
     1. Revision (based on [this pull request for safetensors](https://huggingface.co/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/discussions/8) = `a21e6630`
     1. Container Type = `Text Embeddings Inference`
-    
+
+![example](/posts/arabic-rag-4/inference-endpoints-example.png)
+ 
 Set the other options as you prefer.
 
 ### Test Endpoint
@@ -293,18 +297,18 @@ Lets make sure that we have all our documents:
 
     /home/ec2-user/arabic-wiki/data/embedded
     2094596
-Great, it looks like everythign is correct.
+Great, it looks like everything is correct.
 
 
 # Performance and Cost Analysis
-You can see that we are quite cost effective! For only $2.30 we got text embeddings for ~2M articles!! How does that
+You can see that we are quite cost-effective! For only $2.30 we got text embeddings for ~2M articles!! How does that
 compare with your expectations?
 
 ![Cost](https://huggingface.co/spaces/derek-thomas/arabic-RAG/resolve/main/media/arabic-rag-embeddings-cost.png)
 
 Note that the performance shown is over just the last 30 min window.
 Observations:
-- We have a througput of `~334/s`
+- We have a throughput of `~334/s`
 - Our median latency per request is `~50ms`
 
 ![Metrics](https://huggingface.co/spaces/derek-thomas/arabic-RAG/resolve/main/media/arabic-rag-embeddings-metrics.png)
