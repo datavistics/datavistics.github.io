@@ -15,7 +15,7 @@ Welcome to my blog! My name is Derek Thomas and I am currently a Pre-Sales Machi
 
 I live in Abu Dhabi, UAE, though I'm not from here. I'm an American from Kentucky. Un-related (possibly) I make 
 superb fried chicken 🍗. I moved here in 2017 because I quit my job and sold my car, to chase a girl. 
-I'd say it worked out, since we got married and have 2 kids.
+I'd say it worked out, since we got married and have 2 kids ❤️.
 
 # Focus
 Now that you know a little about me, let me tell you about my intentions here. I want to post about interesting topics
