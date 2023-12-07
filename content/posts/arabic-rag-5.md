@@ -17,9 +17,9 @@ as described in [part 1]({{< ref "arabic-rag-1" >}}).
 
 {{< notice info >}}
 In this blog you will learn:
-- What are good practices for preparing your data for VectorDBs
+- Important VectorDB considerations
+- How to prepare your data for ingestion
 - How to use LanceDB for RAG
-- How well does LanceDB work for RAG
 {{< /notice >}}
  
 # Approach
