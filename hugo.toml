@@ -51,6 +51,11 @@ hideSummary = false
 showtoc = true
 tocopen = true
 
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
 [markup.highlight]
 codeFences = true
 guessSyntax = true
