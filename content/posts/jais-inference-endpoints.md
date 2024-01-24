@@ -9,9 +9,12 @@ cover.image = "cover_images/jais-inference-endpoints.png"
 cover.alt = "Photo Credits to DALL·E 3"
 +++
 
+{{< notice tip >}}
+Please check this out in colab to run the code easily!
 <a target="_blank" href="https://colab.research.google.com/#fileId=https://huggingface.co/spaces/derek-thomas/jais-tgi-benchmark/blob/main/notebooks/jais_tgi_inference_endpoints.ipynb">
   <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
 </a>
+{{< /notice >}}
 
 # Introduction
 
