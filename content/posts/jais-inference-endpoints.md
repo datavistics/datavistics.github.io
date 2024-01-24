@@ -180,6 +180,11 @@ To use a node (multiple GPUs) you will need to use a sharded version of jais. I'
 version like this on the hub.
 {{< /notice >}}
 
+{{< notice warning >}}
+This might take some experimentation to see what works for your budget and use-case. For short inferences, maybe an 
+A10 would work well. For longer inferences maybe you need an A100.
+{{< /notice >}}
+
 ```python
 hw_dict = dict(
         accelerator="gpu",
