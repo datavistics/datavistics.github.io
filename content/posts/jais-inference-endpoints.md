@@ -26,7 +26,7 @@ In this blog you will learn:
   and [Inference Endpoints](https://huggingface.co/inference-endpoints) with jais
 - How to deploy a model on the HW of your choice using
   the [Hub Client Library](https://huggingface.co/docs/huggingface_hub/index)
-- Fundamental concepts on how decoding works and why thy matter
+- Fundamental concepts on how decoding works and why they matter
   {{< /notice >}}
 
 ## Approach
